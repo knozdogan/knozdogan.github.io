@@ -1,5 +1,7 @@
 function setup() {
-  createCanvas(400,600);
+  createCanvas(windowWidth,windowHeight);
+  textSize(30);
+  textFont('Helvetica');
   //stroke(0, 102);
 }
 
@@ -8,5 +10,8 @@ function draw() {
   //var weight = dist(touchX, touchY, ptouchX, ptouchY);
   //strokeWeight(weight);
   //line(touchX, touchY, ptouchX, ptouchY);
-  ellipse(touchX, touchY, 20, 20);
+  fill(0);
+  text("UNDER DEVELOPMENT", 100, windowHeight/4);
+  fill(153);
+  ellipse(mouseX, mouseY, 20, 20);
 }
