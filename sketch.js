@@ -1,12 +1,11 @@
 function setup() {
   createCanvas(600,600);
+  stroke(0, 102);
 }
 
 function draw() {
-  if (mouseIsPressed) {
-    fill(0);
-  } else {
-    fill(255);
-  }
-  ellipse(mouseX, mouseY, 20, 20);
+  //background(0);
+  var weight = dist(touchX, touchY, ptouchX, ptouchY);
+  strokeWeight(weight);
+  line(touchX, touchY, ptouchX, ptouchY);
 }
