@@ -7,7 +7,7 @@ function setup() {
 }
 
 function draw() {
-  if (mousePressed())
+  if (mouseIsPressed)
   {
   if (hue > 360) {
     hue = 0;
