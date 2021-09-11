@@ -7,6 +7,8 @@ function setup() {
 }
 
 function draw() {
+  if (mousePressed())
+  {
   if (hue > 360) {
     hue = 0;
   } else {
@@ -16,4 +18,5 @@ function draw() {
   noStroke();
   fill(hue, 200, 200);
   ellipse(mouseX, mouseY, 20, 20);
+  }
 }
