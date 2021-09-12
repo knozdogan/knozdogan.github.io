@@ -1,7 +1,7 @@
 var hue;
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(windowWidth * 0.8, windowHeight * 0.8);
 	background(0);
 	hue=0;
 	let a = createA('https://knozdogan.github.io', 'back');
