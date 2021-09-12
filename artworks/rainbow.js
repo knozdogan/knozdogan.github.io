@@ -4,6 +4,8 @@ function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(0);
 	hue=0;
+	let a = createA('https://knozdogan.github.io', 'back');
+	a.position(10, 10);
 }
 
 function draw() {
