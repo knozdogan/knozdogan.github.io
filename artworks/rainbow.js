@@ -1,7 +1,7 @@
 var hue;
 
 function setup() {
-	createCanvas(windowWidth * 0.8, windowHeight * 0.8);
+	createCanvas(windowWidth * 0.9, windowHeight * 0.9);
 	background(0);
 	hue=0;
 	let a = createA('https://knozdogan.github.io', 'back');
@@ -21,4 +21,9 @@ function draw() {
   fill(hue, 200, 200);
   ellipse(mouseX, mouseY, 20, 20);
   }
+}
+
+/* full screening will change the size of the canvas */
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
