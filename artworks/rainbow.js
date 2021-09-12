@@ -1,8 +1,17 @@
 var hue;
+var cnv;
+
+function centerCanvas() {
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  cnv.position(x, y);
+}
 
 function setup() {
-	createCanvas(windowWidth * 0.9, windowHeight * 0.9);
+	let cnv = createCanvas(windowWidth * 0.9, windowHeight * 0.9);
+	centerCanvas();
 	background(0);
+	cnv.parent('sketch-holder');
 	hue=0;
 	let a = createA('https://knozdogan.github.io', 'back');
 	a.position(10, 10);
@@ -25,5 +34,6 @@ function draw() {
 
 /* full screening will change the size of the canvas */
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  centerCanvas();
+  background(0);
 }
