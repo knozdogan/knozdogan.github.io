@@ -11,7 +11,7 @@ function setup() {
 	let cnv = createCanvas(windowWidth * 0.9, windowHeight * 0.9);
 	centerCanvas();
 	background(0);
-	cnv.parent('sketch-holder');
+	//cnv.parent('sketch-holder');
 	hue=0;
 	let a = createA('https://knozdogan.github.io', 'back');
 	a.position(10, 10);
