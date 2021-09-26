@@ -63,7 +63,7 @@ function draw() {
                 _hue1++;
             }
         }
-    colorMode(HSL, 360);
+    colorMode(HSB);
     let val = j / num * 204.0 + 51;
     stroke(_hue1, val, 200);
     strokeWeight(5)
