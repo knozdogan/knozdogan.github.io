@@ -3,7 +3,8 @@ var _hue2;
 
 
 let num = 15;
-let range = 1000;
+let range = window.screen.width / 2;
+
 
 let ax = [];
 let ay = [];
