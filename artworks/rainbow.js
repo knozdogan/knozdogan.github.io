@@ -1,20 +1,21 @@
 var hue;
-var cnv;
+// var cnv;
 
-function centerCanvas() {
-  var x = (windowWidth - width) / 2;
-  var y = (windowHeight - height) / 2;
-  cnv.position(x, y);
-}
+// function centerCanvas() {
+//   var x = (windowWidth - width) / 2;
+//   var y = (windowHeight - height) / 2;
+//   cnv.position(x, y);
+// }
 
 function setup() {
-	let cnv = createCanvas(windowWidth * 0.9, windowHeight * 0.9);
-	centerCanvas();
+	let cnv = createCanvas(windowWidth, windowHeight);
+  cnv.parent('sketch-holder')
+	//centerCanvas();
 	background(0);
 	//cnv.parent('sketch-holder');
 	hue=0;
-	let a = createA('https://knozdogan.github.io', 'back');
-	a.position(10, 10);
+	// let a = createA('https://knozdogan.github.io', 'back');
+	// a.position(10, 10);
 }
 
 function draw() {
@@ -33,7 +34,7 @@ function draw() {
 }
 
 /* full screening will change the size of the canvas */
-function windowResized() {
-  centerCanvas();
-  background(0);
-}
+// function windowResized() {
+//   centerCanvas();
+//   background(0);
+// }
