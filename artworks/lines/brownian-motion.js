@@ -79,7 +79,7 @@ function draw() {
                 _hue2++;
             }
         }
-    colorMode(HSL, 360);
+    colorMode(RGB, 250);
     let val = j / num * 204.0 + 51;
     stroke(_hue2, val, 200);
     line(bx[j - 1], by[j - 1], bx[j], by[j]);
