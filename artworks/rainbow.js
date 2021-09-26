@@ -8,7 +8,7 @@ var hue;
 // }
 
 function setup() {
-	let cnv = createCanvas(windowWidth, windowHeight);
+	let cnv = createCanvas(windowWidth * 0.9, windowHeight * 0.9);
   cnv.parent('sketch-holder')
 	//centerCanvas();
 	background(0);
