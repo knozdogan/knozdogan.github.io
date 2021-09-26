@@ -1,4 +1,4 @@
-var hue;
+var _hue;
 // var cnv;
 
 // function centerCanvas() {
@@ -13,7 +13,7 @@ function setup() {
 	//centerCanvas();
 	background(0);
 	//cnv.parent('sketch-holder');
-	hue=0;
+	_hue=0;
 	// let a = createA('https://knozdogan.github.io', 'back');
 	// a.position(10, 10);
 }
@@ -21,10 +21,10 @@ function setup() {
 function draw() {
   if (mouseIsPressed)
   {
-  if (hue > 360) {
-    hue = 0;
+  if (_hue > 360) {
+    _hue = 0;
   } else {
-    hue++;
+    _hue++;
   }
   colorMode(HSL, 360);
   noStroke();
