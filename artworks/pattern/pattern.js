@@ -15,6 +15,7 @@ function setup() {
   rectMode(CENTER);
   colorMode(HSB, 360, 100, 100);
   background(0);
+  frameRate(60);
 }
 
 function draw() {
@@ -65,6 +66,6 @@ function draw() {
   if(color_palette == 360){
     color_palette = 0;
   }else{
-    color_palette++;
+    color_palette+=5;
   }
 }
