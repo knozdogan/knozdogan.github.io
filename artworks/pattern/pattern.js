@@ -15,34 +15,31 @@ function draw() {
   noFill();
 
   // rect-1
-  push();
-  translate(width/2, height/2);
-  rotate(- theta + 90);
-  for(var i =0; i < width * 70/height; i++){
-    //stroke(_hue%360,100,100)
-    rect(0, 0,
-    i*multiplier,
-    i*multiplier);
-  }
-  pop();
+  rotatingRect(true);
 
   // rect-2
+  rotatingRect(false);
+
+  // increase theta
+  theta += rotationSpeed;
+
+}
+
+function rotatingRect(isReverse){
   push();
   translate(width/2, height/2);
-  rotate(theta);
+
+  if(isReverse){
+    rotate(- theta + 90);
+  }else{
+    rotate(theta);
+  }
+
   for(var i =0; i < width * 70/height; i++){
-    //stroke((_hue%360+180)%360,100,100)
     rect(0, 0,
     i*multiplier,
     i*multiplier);
   }
+
   pop();
-  theta += rotationSpeed;
-
-  // if(Date.now()-start_time > 1000){
-  //   _hue += 10;
-  //   print(_hue%360);
-  //   start_time = Date.now();
-  // }
-
 }
